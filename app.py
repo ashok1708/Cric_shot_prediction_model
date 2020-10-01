@@ -1,5 +1,4 @@
 from __future__ import division, print_function
-# coding=utf-8
 import sys
 import os
 import glob
@@ -29,9 +28,6 @@ learn.load('stage-2')
 
 
 def model_predict(img_path):
-    """
-       model_predict will return the preprocessed image
-    """
     img = open_image(img_path)
     pred_class, pred_idx, outputs = learn.predict(img)
     return pred_class
